@@ -25,6 +25,7 @@ Requires: moblin-panel-pasteboard
 Requires: moblin-panel-people
 Requires: moblin-panel-status
 Requires: moblin-web-browser-panel
+Requires(post): GConf2
 
 %description
 Package to install Moblin schema file.
@@ -33,6 +34,11 @@ Package to install Moblin schema file.
 cp %{SOURCE0} .
 install -d $RPM_BUILD_ROOT%{_sysconfdir}/gconf/gconf.xml.moblin
 install -m 0644 %{SOURCE1} $RPM_BUILD_ROOT%{_sysconfdir}/gconf/gconf.xml.moblin
+
+%post
+if ! fgrep -q gconf.xml.moblin %{_sysconfdir}/gconf/2/path; then
+    sed -i -e 's@xml:readonly:/etc/gconf/gconf.xml.system@&\n\n# Moblin settings.\nxml:readonly:/etc/gconf/gconf.xml.moblin@' %{_sysconfdir}/gconf/2/path
+fi
 
 %files
 %defattr(-,root,root,-)
