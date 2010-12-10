@@ -1,6 +1,6 @@
 Name:           moblin-ux-settings
 Version:        0.19
-Release:        %mkrel 2
+Release:        %mkrel 3
 Summary:        Package to set schemas for the Moblin Shell
 Group:          Graphical desktop/Other
 License:        LGPLv2.1
