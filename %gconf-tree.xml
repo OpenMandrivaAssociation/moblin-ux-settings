@@ -1,0 +1,136 @@
+<?xml version="1.0"?>
+<gconf>
+	<dir name="desktop">
+		<dir name="gnome">
+			<dir name="url-handlers">
+				<dir name="https">
+					<entry name="command" mtime="1251799223" type="string">
+						<stringvalue>moblin-web-browser %s</stringvalue>
+					</entry>
+				</dir>
+				<dir name="http">
+					<entry name="command" mtime="1251799223" type="string">
+						<stringvalue>moblin-web-browser %s</stringvalue>
+					</entry>
+				</dir>
+			</dir>
+			<dir name="peripherals">
+				<dir name="mouse">
+					<entry name="mouse_threshold" mtime="1251799223" type="int" value="2"/>
+					<entry name="mouse_acceleration" mtime="1251799223" type="float" value="0.80000000000000004"/>
+					<entry name="cursor_theme" mtime="1251799222" type="string">
+						<stringvalue>moblin</stringvalue>
+					</entry>
+				</dir>
+			</dir>
+			<dir name="background">
+				<entry name="picture_filename" mtime="1251799223" type="string">
+                                  <stringvalue>/usr/share/moblin-panel-myzone/theme/toys.jpg</stringvalue>
+				</entry>
+			</dir>
+			<dir name="interface">
+				<entry name="monospace_font_name" mtime="1251799223" type="string">
+					<stringvalue>Droid Sans Mono 9</stringvalue>
+				</entry>
+				<entry name="font_name" mtime="1251799223" type="string">
+					<stringvalue>Droid Sans 9</stringvalue>
+				</entry>
+				<entry name="document_font_name" mtime="1251799223" type="string">
+					<stringvalue>Droid Sans 9</stringvalue>
+				</entry>
+				<entry name="buttons_have_icons" mtime="1251799222" type="bool" value="false"/>
+				<entry name="menus_have_icons" mtime="1251799222" type="bool" value="false"/>
+				<entry name="toolbar_style" mtime="1251799222" type="string">
+					<stringvalue>icons</stringvalue>
+				</entry>
+				<entry name="icon_theme" mtime="1251799222" type="string">
+					<stringvalue>moblin</stringvalue>
+				</entry>
+				<entry name="gtk_theme" mtime="1251799222" type="string">
+					<stringvalue>Moblin-Netbook</stringvalue>
+				</entry>
+			</dir>
+			<dir name="sound">
+				<entry name="theme_name" mtime="1251799222" type="string">
+					<stringvalue>moblin</stringvalue>
+				</entry>
+			</dir>
+		</dir>
+	</dir>
+	<dir name="apps">
+		<dir name="gnome_settings_daemon">
+			<dir name="keybindings">
+				<entry name="power" mtime="1251799223" type="string">
+					<stringvalue></stringvalue>
+				</entry>
+			</dir>
+		</dir>
+		<dir name="metacity">
+			<dir name="general">
+				<entry name="titlebar_font" mtime="1251799223" type="string">
+					<stringvalue>Droid Sans 10</stringvalue>
+				</entry>
+				<entry name="action_right_click_titlebar" mtime="1251799223" type="string">
+					<stringvalue>none</stringvalue>
+				</entry>
+				<entry name="action_middle_click_titlebar" mtime="1251799222" type="string">
+					<stringvalue>none</stringvalue>
+				</entry>
+				<entry name="action_double_click_titlebar" mtime="1251799222" type="string">
+					<stringvalue>none</stringvalue>
+				</entry>
+				<entry name="button_layout" mtime="1251799222" type="string">
+					<stringvalue>:close</stringvalue>
+				</entry>
+				<entry name="theme" mtime="1251799222" type="string">
+					<stringvalue>Moblin-Netbook</stringvalue>
+				</entry>
+			</dir>
+			<dir name="keybinding_commands">
+				<entry name="command_window_screenshot" mtime="1251799222" type="string">
+					<stringvalue>gnome-screenshot --window</stringvalue>
+				</entry>
+				<entry name="command_screenshot" mtime="1251799222" type="string">
+					<stringvalue>gnome-screenshot</stringvalue>
+				</entry>
+			</dir>
+			<dir name="global_keybindings">
+				<entry name="run_command_window_screenshot" mtime="1251799222" type="string">
+					<stringvalue>&lt;Alt&gt;Print</stringvalue>
+				</entry>
+				<entry name="run_command_screenshot" mtime="1251799222" type="string">
+					<stringvalue>Print</stringvalue>
+				</entry>
+			</dir>
+		</dir>
+		<dir name="nautilus">
+			<dir name="icon_view">
+				<entry name="default_zoom_level" mtime="1251799223" type="string">
+					<stringvalue>standard</stringvalue>
+				</entry>
+				<entry name="labels_beside_icons" mtime="1251799223" type="bool" value="false"/>
+			</dir>
+			<dir name="preferences">
+				<entry name="media_automount_open" mtime="1251799223" type="bool" value="false"/>
+				<entry name="media_automount" mtime="1251799223" type="bool" value="false"/>
+				<entry name="media_autorun_never" mtime="1251799223" type="bool" value="true"/>
+				<entry name="show_desktop" mtime="1251799223" type="bool" value="false"/>
+				<entry name="exit_with_last_window" mtime="1251799223" type="bool" value="true"/>
+				<entry name="always_use_browser" mtime="1251799223" type="bool" value="true"/>
+				<entry name="desktop_font" mtime="1251799223" type="string">
+					<stringvalue>Droid Sans 9</stringvalue>
+				</entry>
+			</dir>
+		</dir>
+		<dir name="mutter">
+			<dir name="general">
+				<entry name="clutter_plugins" mtime="1251799223" type="list" ltype="string">
+					<li type="string">
+						<stringvalue>moblin-netbook</stringvalue>
+					</li>
+				</entry>
+				<entry name="clutter_disabled" mtime="1251799223" type="bool" value="false"/>
+			</dir>
+		</dir>
+	</dir>
+</gconf>

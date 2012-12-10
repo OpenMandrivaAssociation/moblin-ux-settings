@@ -51,3 +51,24 @@ cp gconf.path %{buildroot}%{_sysconfdir}/gconf/2/moblin.path
 %doc README
 %{_sysconfdir}/gconf/gconf.xml.moblin/%gconf-tree.xml
 %{_sysconfdir}/gconf/2/moblin.path
+
+
+%changelog
+* Fri Dec 10 2010 Oden Eriksson <oeriksson@mandriva.com> 0.19-3mdv2011.0
++ Revision: 620386
+- the mass rebuild of 2010.0 packages
+
+* Wed Oct 07 2009 Olivier Blin <oblin@mandriva.com> 0.19-2mdv2010.0
++ Revision: 455666
+- build a /etc/gconf/2/moblin.path including moblin defaults
+  to be used with GCONF_DEFAULT_SOURCE_PATH in moblin-session
+  (idea from /sbrabec:/branches:/Moblin:/UI/openSUSE_Factory)
+- revert hijacking of /etc/gconf/2/path, we will do this cleanly in the moblin session
+- use /etc/gconf/gconf.xml.moblin by default in GConf
+
+* Wed Oct 07 2009 Olivier Blin <oblin@mandriva.com> 0.19-1mdv2010.0
++ Revision: 455340
+- fix group
+- initial import (from Caio Begotti, based on Moblin package)
+- Created package structure for moblin-ux-settings.
+
