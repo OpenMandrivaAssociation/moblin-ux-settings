@@ -4,7 +4,7 @@ Release:        %mkrel 3
 Summary:        Package to set schemas for the Moblin Shell
 Group:          Graphical desktop/Other
 License:        LGPLv2.1
-URL:            http://www.moblin.org
+URL:            https://www.moblin.org
 Source0:        README
 Source1:        %gconf-tree.xml
 BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-buildroot
